@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Connect with Leseding AI Engine</title>
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <img id="logo" class="brand-logo" alt="" width="64" height="64">
+      <p id="projectName" class="brand-name"></p>
+      <p id="tagline" class="brand-tagline"></p>
+    </header>
+
+    <section id="formView" class="card">
+      <div class="intro">
+        <h1 id="formTitle"></h1>
+        <p id="formIntro"></p>
+      </div>
+
+      <section class="connecting" aria-labelledby="connectingLabel">
+        <p id="connectingLabel" class="section-label"></p>
+        <div class="member">
+          <div class="member-thumb">
+            <img id="memberPhoto" alt="" hidden>
+            <span id="memberInitials" class="member-initials" aria-hidden="true"></span>
+          </div>
+          <div class="member-text">
+            <p class="member-line">
+              <span id="memberName" class="member-name"></span>
+              <span id="memberProject" class="member-project"></span>
+            </p>
+            <p id="memberRole" class="member-role"></p>
+          </div>
+        </div>
+      </section>
+
+      <form id="leadForm" novalidate>
+        <p id="detailsLabel" class="section-label"></p>
+
+        <div class="field" data-field="fullName">
+          <label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" maxlength="100" required placeholder="Enter your full name" aria-describedby="fullName-err">
+          <p class="err" id="fullName-err" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="organisation">
+          <label for="organisation">Organisation / company</label>
+          <input id="organisation" name="organisation" type="text" autocomplete="organization" maxlength="150" placeholder="Company or organisation" aria-describedby="organisation-err">
+          <p class="err" id="organisation-err" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="email">
+          <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" maxlength="254" required placeholder="you@example.com" aria-describedby="email-err">
+          <p class="err" id="email-err" role="alert"></p>
+        </div>
+
+        <div class="field" data-field="phone">
+          <label for="phone">Phone / WhatsApp</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" placeholder="e.g. +267 71 234 567" aria-describedby="phone-err">
+          <p class="err" id="phone-err" role="alert"></p>
+        </div>
+
+        <fieldset class="field" data-field="interest" aria-describedby="interest-err">
+          <legend>I am interested in… <span class="req" aria-hidden="true">*</span></legend>
+          <div id="interestOptions" class="options"></div>
+          <p class="err" id="interest-err" role="alert"></p>
+        </fieldset>
+
+        <div class="field" data-field="message">
+          <label for="message">Message / area of interest</label>
+          <textarea id="message" name="message" rows="3" maxlength="1000" placeholder="Anything you would like us to know" aria-describedby="message-err"></textarea>
+          <p class="hint"><span id="messageCount">0</span>/1000</p>
+          <p class="err" id="message-err" role="alert"></p>
+        </div>
+
+        <!-- Honeypot: hidden from people, bots tend to fill it -->
+        <div class="hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="field consent" data-field="consent">
+          <label class="check">
+            <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-err">
+            <span><span id="consentText"></span> <span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <p class="err" id="consent-err" role="alert"></p>
+        </div>
+
+        <p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+
+        <button id="submitBtn" type="submit" class="btn"><span class="btn-label"></span></button>
+        <p id="privacyNote" class="privacy"></p>
+      </form>
+    </section>
+
+    <section id="successView" class="card success" hidden tabindex="-1">
+      <div class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 id="successTitle"></h2>
+      <p id="successMessage"></p>
+      <button id="anotherBtn" type="button" class="btn btn-ghost"></button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
