@@ -65,7 +65,7 @@ window.LESEDING_CONFIG = {
   // Server-side attribution is checked against the Team tab in the sheet; keep IDs in sync.
   team: [
     { id: 'sylvain', name: 'Sylvain Kgosietsile Nalebomo', role: 'Founder & Project Lead', photo: 'assets/team/sylvain.png', active: true },
-    { id: 'gorata',  name: 'Gorata Blair Kareng',          role: 'PR & Business Developer', photo: 'assets/team/gorata.png',  active: true },
+    { id: 'gorata',  name: 'Gorata Blair Kareng',          role: 'UX/UI Designer & PR', photo: 'assets/team/gorata.png',  active: true },
     { id: 'arabang', name: 'Arabang Benville Mothofela',   role: 'Systems Design',          photo: 'assets/team/arabang.png', active: true }
   ]
 };
