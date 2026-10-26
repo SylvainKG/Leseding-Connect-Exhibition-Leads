@@ -64,9 +64,9 @@ window.LESEDING_CONFIG = {
   // `id` is what goes in the QR link (?member=id) — never change it after cards are printed.
   // Server-side attribution is checked against the Team tab in the sheet; keep IDs in sync.
   team: [
-    { id: 'sylvain', name: 'Sylvain Kgosietsile Nalebomo', role: 'Founder & Project Lead', photo: 'assets/team/sylvain.jpg', active: true },
-    { id: 'gorata',  name: 'Gorata Blair Kareng',          role: 'PR & Business Developer', photo: 'assets/team/gorata.jpg',  active: true },
-    { id: 'arabang', name: 'Arabang Benville Mothofela',   role: 'Systems Design',          photo: 'assets/team/arabang.jpg', active: true }
+    { id: 'sylvain', name: 'Sylvain Kgosietsile Nalebomo', role: 'Founder & Project Lead', photo: 'assets/team/sylvain.png', active: true },
+    { id: 'gorata',  name: 'Gorata Blair Kareng',          role: 'PR & Business Developer', photo: 'assets/team/gorata.png',  active: true },
+    { id: 'arabang', name: 'Arabang Benville Mothofela',   role: 'Systems Design',          photo: 'assets/team/arabang.png', active: true }
   ]
 };
 
