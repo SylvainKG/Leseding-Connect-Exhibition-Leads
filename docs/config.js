@@ -66,7 +66,7 @@ window.LESEDING_CONFIG = {
   team: [
     { id: 'sylvain', name: 'Sylvain Kgosietsile Nalebomo', role: 'Founder & Project Lead', photo: 'assets/team/sylvain.png', active: true },
     { id: 'gorata',  name: 'Gorata Blair Kareng',          role: 'UX/UI Designer & PR', photo: 'assets/team/gorata.png',  active: true },
-    { id: 'arabang', name: 'Arabang Benville Mothofela',   role: 'Systems Design',          photo: 'assets/team/arabang.png', active: true }
+    { id: 'arabang', name: 'Arabang Benville Mothofela',   role: 'Full-Stack & AI Systems Design',          photo: 'assets/team/arabang.png', active: true }
   ]
 };
 
