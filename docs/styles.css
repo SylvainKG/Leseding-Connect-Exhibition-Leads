@@ -38,14 +38,21 @@ p, h1, h2 { margin: 0; }
 
 /* ---------- Brand header ---------- */
 .brand {
-  background: var(--brand-primary);
-  color: #fff;
+  background: var(--header-background, #FFFFFF);
+  color: var(--header-text, #18355B);
   text-align: center;
-  padding: 28px 16px 56px;
-  margin: 0 -16px;
+  padding: 20px 16px 18px;
+  margin: 0 -16px 16px;
+  border-bottom: 1px solid var(--border-colour);
 }
-.brand-logo { width: 64px; height: 64px; object-fit: contain; margin: 0 auto 10px; }
-.brand-name { font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 1.05rem; }
+.brand-logo {
+  width: min(var(--logo-width, 240px), 75vw);
+  height: auto;
+  aspect-ratio: 370 / 200;
+  object-fit: contain;
+  margin: 0 auto 6px;
+}
+.brand-name { font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 1.05rem; color: var(--header-text, #18355B); }
 .brand-tagline { color: var(--brand-accent); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 2px; }
 
 /* ---------- Card ---------- */
@@ -54,7 +61,6 @@ p, h1, h2 { margin: 0; }
   border: 1px solid var(--border-colour);
   border-radius: var(--card-radius);
   padding: 22px 18px 24px;
-  margin-top: -36px;
   position: relative;
   box-shadow: 0 6px 24px rgba(16, 28, 44, 0.08);
 }

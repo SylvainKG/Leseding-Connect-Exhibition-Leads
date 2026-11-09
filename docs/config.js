@@ -8,8 +8,8 @@ window.LESEDING_CONFIG = {
   apiUrl: 'https://script.google.com/macros/s/AKfycbyfWbzD_dK6-DQxpsaizHztlBWYT2FE8swDXjSFYOV5ZONY8ZxuqfETgC14NQw0Vw-n/exec',
 
   brand: {
-    projectName: 'Leseding AI Engine',
-    tagline: 'Voice-first AI customer support',
+    projectName: '',
+    tagline: '',                                   // leave empty to hide the tagline
     logo: 'assets/logo-placeholder.svg',          // TEMPORARY — replace with final logo (SVG or transparent PNG)
     logoAlt: 'Leseding AI Engine logo',
     fontFamily: "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
@@ -18,6 +18,9 @@ window.LESEDING_CONFIG = {
 
   // TEMPORARY placeholder colours — NOT approved Leseding brand colours.
   theme: {
+    '--header-background': '#FFFFFF',               // area behind the logo + project name
+    '--header-text': '#18355B',                     // project name colour
+    '--logo-width': '240px',                        // logo display width on phones (height scales automatically)
     '--brand-primary': '#101C2C',
     '--brand-secondary': '#2457C5',
     '--brand-accent': '#D5F36A',
