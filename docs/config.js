@@ -8,9 +8,10 @@ window.LESEDING_CONFIG = {
   apiUrl: 'https://script.google.com/macros/s/AKfycbyfWbzD_dK6-DQxpsaizHztlBWYT2FE8swDXjSFYOV5ZONY8ZxuqfETgC14NQw0Vw-n/exec',
 
   brand: {
-    projectName: '',
+    projectName: 'Leseding AI Engine',             // also used on the "You're connecting with" card
+    showNameInHeader: false,                       // true = show the project name as text under the logo
     tagline: '',                                   // leave empty to hide the tagline
-    logo: 'assets/logo-placeholder.svg',          // TEMPORARY — replace with final logo (SVG or transparent PNG)
+    logo: 'assets/logo.png',                       // export at 3x (e.g. 1110 x 600 px) for sharp phone screens
     logoAlt: 'Leseding AI Engine logo',
     fontFamily: "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
     fontStylesheet: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'

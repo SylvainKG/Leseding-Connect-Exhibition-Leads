@@ -50,8 +50,9 @@ p, h1, h2 { margin: 0; }
   height: auto;
   aspect-ratio: 370 / 200;
   object-fit: contain;
-  margin: 0 auto 6px;
+  margin: 0 auto;
 }
+.brand-logo + .brand-name:not([hidden]) { margin-top: 6px; }
 .brand-name { font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 1.05rem; color: var(--header-text, #18355B); }
 .brand-tagline { color: var(--brand-accent); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 2px; }
 

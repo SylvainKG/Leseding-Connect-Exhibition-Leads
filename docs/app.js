@@ -15,6 +15,7 @@
   $('logo').alt = C.brand.logoAlt;
   $('logo').onerror = function () { this.remove(); };
   $('projectName').textContent = C.brand.projectName;
+  $('projectName').hidden = C.brand.showNameInHeader === false || !C.brand.projectName;
   $('tagline').textContent = C.brand.tagline || '';
   $('tagline').hidden = !C.brand.tagline;
   $('formTitle').textContent = C.copy.formTitle;
